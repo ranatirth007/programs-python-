@@ -1,0 +1,49 @@
+#(1)Create a tuple with elements 1,2,3, ‘data’, “science”, 2, 3
+t1=(1,2,3,"data","science",2,3)
+t1
+
+
+#(2)Display the third element from the  tuple.
+print(t1[2])
+
+
+#(3)Display every alternate element starting at index 1.
+t1[0::2]
+
+
+
+ #(4)Display the number of occurrence of element 2
+ t2=(1,2,3,2,2,4,5,2,6,4,2)
+ t2.count(2)
+
+
+#(5)Display the index location of element 3 (perform with exception handling
+t2=(1,2,3,2,2,4,5,2,6,4,2)
+try:
+  t2.index(3)
+except ValueError:
+  Print("element not found")
+
+
+#(6)Create a list of n numbers given by the user. Eg: [1,3,5,6,3,2,5,6]
+l=[]
+n=int(input("enter no. of elements:"))
+for i in range (n):
+  r=int(input("enter elements:"))
+  l.append(r)
+print(l)
+
+
+
+#(7)Display sum of numbers given in the above created list.
+l=[]
+n=int(input("enter no. of elements:"))
+for i in range (n):
+  r=int(input("enter elements:"))
+  l.append(r)
+
+m=0
+for i in range (n):
+  m+=l[i]
+
+print("sum is",m)
