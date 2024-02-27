@@ -1,0 +1,4 @@
+#5. Check whether the main string ends with the given string
+fc=input("enter a string:")
+g=input("enter starting string to be checked:")
+print(fc.endswith(g))
