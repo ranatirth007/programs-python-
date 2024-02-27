@@ -1,0 +1,3 @@
+#6.Remove extra space from the given string using strip() method
+str=input("enter a string:")
+print(str.rstrip())
