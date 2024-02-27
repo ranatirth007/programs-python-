@@ -1,0 +1,71 @@
+#1. Create a list of words from the sentence given by the user.
+l=[]
+n=int(input("Enter no. of list elements."))
+print("Enter a list of strings:")
+for i in range(n):
+  s=input("enter element:")
+  l.append(s)
+print(l)
+
+
+#2. Join the above created list of words using ‘#’ symbol.
+l2=["Tirth","Rohit","Rana"]
+l3='#'.join(l2)
+l3
+
+
+
+
+#3. Replace a substring of the main string with another string.
+s=input("enter a string:")
+s
+f=input("Enter substring to be find:")
+v=input("enter another stringto be replaced:")
+t=s.find(f)
+if(t==-1):
+  print("substring not found.")
+else:
+  b=s.replace(f,v)
+print("Old: "+s)
+print("new: "+b)
+
+
+
+#4. Check whether the main string starts with the given string
+sv=input("enter a string:")
+d=input("enter starting string to be checked:")
+print(sv.startswith(d))
+
+
+
+
+#5. Check whether the main string ends with the given string
+fc=input("enter a string:")
+g=input("enter starting string to be checked:")
+print(fc.endswith(g))
+
+
+
+
+#6.Remove extra space from the given string using strip() method
+str=input("enter a string:")
+print(str.rstrip())
+
+
+
+
+
+#7. Check whether the given string is numeric or not.
+str1=input("enter string:")
+print(str1.isdigit())
+
+
+
+
+#8. Write a program to check given input is palindrome or not
+str3=input("Enter a string:")
+str4=str3[::-1]
+if(str3==str4):
+  print("string is palindrome.")
+else:
+  print("string is not a palindrome.")
