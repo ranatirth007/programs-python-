@@ -1,0 +1,4 @@
+#4. Check whether the main string starts with the given string
+sv=input("enter a string:")
+d=input("enter starting string to be checked:")
+print(sv.startswith(d))
