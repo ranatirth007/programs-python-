@@ -1,0 +1,19 @@
+#(1)Create a list of five Indian States Eg: [Gujarat, Rajasthan, Andhra Pradesh, Punjab, Kerala]
+
+l1=["Gujarat","Rajasthan", "Andhra Pradesh", "Punjab", "Kerala"]
+l1
+
+#(2)Create a list of five Indian States capitals Eg: [Gandhinagar, Jaipur, Visakhapatnam, Chandigarh, Thiruvananthapuram]
+l2=["Gandhinagar", "Jaipur", "Visakhapatnam", "Chandigarh", "Thiruvananthapuram"]
+l2
+
+#(3)Create a dictionary using the above two lists.
+
+d1={"Gujarat":"Gandhinagar","Rjasthan":"Jaipur","Andhra Pradesh":"Visakhapatnam","Panjab":"Chandigarh","Karela":"Tiruvananthapuram"}
+d1
+
+
+#(4)Display the capital of Gujarat.
+d1={"Gujarat":"Gandhinagar","Rjasthan":"Jaipur","Andhra Pradesh":"Visakhapatnam","Panjab":"Chandigarh","Karela":"Tiruvananthapuram"}
+
+print(d1["Gujarat"])
