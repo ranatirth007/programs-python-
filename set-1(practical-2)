@@ -1,4 +1,0 @@
-#2. Join the above created list of words using ‘#’ symbol.
-l2=["Tirth","Rohit","Rana"]
-l3='#'.join(l2)
-l3
