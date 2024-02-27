@@ -1,7 +1,0 @@
-#8. Write a program to check given input is palindrome or not
-str3=input("Enter a string:")
-str4=str3[::-1]
-if(str3==str4):
-  print("string is palindrome.")
-else:
-  print("string is not a palindrome.")
