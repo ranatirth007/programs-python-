@@ -1,0 +1,87 @@
+#(1)Write a program to take a number from user and display it
+a=int(input("enter a number:"))
+print(a)
+
+
+
+
+#(2)Write a program to take input from users and print if the input number is odd or even.
+a=int(input("enter any number:"))
+if(a!=0):
+
+  if(a%2==0):
+      print("entered number",a,"is even")
+  else:
+      print("entered number",a,"is odd")
+else:
+  print("you have entered 0 please enter non zero number!!")
+
+
+
+
+
+#(3)Write a program to find if the number is positive, negative or zero.
+a=int(input("enter any number:"))
+if(a>0):
+    print("entered number",a,"is positive.")
+elif(a<0):
+    print("entered number",a,"is negative.")
+else:
+    print("entered number",a,"is zero.")
+
+
+
+
+
+#(4)Write a program to print all even numbers within the range provided by the user.
+n=int(input("enter starting :"))
+m=int(input("enter end:"))
+
+for i in range (n,m):
+  if(i%2==0):
+    print(i)
+
+
+
+
+#(5)Write a program to compute the factorial of a number given by the user. (while)
+n=int(input("enter number:"))
+i=1
+fact=1
+while(i<=n):
+  fact=fact*i
+  i+=1
+print(fact)
+
+
+
+
+#(6)Write a function to display digit at unit place of a given number
+def unit_place(n):
+  i=n%10
+  print(i)
+
+n=int(input("enter number:"))
+unit_place(n)
+
+
+
+
+#(7)Write a function to display maximum of three numbers
+def max_3(a,b,c):
+  if(a>b):
+    if(a>c):
+      print(a," is greatest.")
+    else:
+      print(c," is greatest.")
+  else:
+    if(b>c):
+      print(b," is greatest.")
+    else:
+      print(c," is greatest.")
+
+a=int(input("Enter 1st number:"))
+b=int(input("Enter 2nd number:"))
+c=int(input("Enter 3rd number:"))
+
+max_3(a,b,c)
