@@ -1,8 +1,0 @@
-#1. Create a list of words from the sentence given by the user.
-l=[]
-n=int(input("Enter no. of list elements."))
-print("Enter a list of strings:")
-for i in range(n):
-  s=input("enter element:")
-  l.append(s)
-print(l)
