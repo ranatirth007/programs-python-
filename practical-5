@@ -1,0 +1,56 @@
+#5.1 Create an array of numbers from one to twenty in reverse order.
+import numpy as np
+print("array is:")
+a=np.arange(21)[1:21]
+b=a[::-1]
+print(b)
+
+
+#5.2 Create an array of 10 numbers which is evenly spaced in the range of 1 to 5.
+import numpy as np
+arr=np.arange(0,5,0.5)
+arr
+
+
+#5.3 Create an array of 10 numbers which is evenly spaced in the range of 1 to 5 on log scale.
+brr=np.logspace(10,20,num=10,base=2)
+brr
+
+
+#5.4 Create an array of 10 random numbers in the range of 200 to 300.
+import random
+array=np.random.randint(200,300,10)
+array
+
+#5.5 Create a 2D array of size 2X3 with all elements filled with 8
+arr1=np.full((2,3),8)
+arr1
+
+#5.6 Create a 2D array of size 4X3 with all elements in the range of 1 to 12 and perform following operations:
+# 1)Display the created array.
+brr1=np.arange(1,13) 
+brr2=brr1.reshape(4,3)
+brr2
+
+
+# 2)Display the second row of the created array.
+print(brr2[1,:])
+
+# 3)Display the second column of the created array.
+print(brr2[:,1])
+
+# 4)Display alternate columns of the created array.
+print(brr2[:,: :2])
+
+# 5)Display second and fourth row of the created array
+print(brr2[1::2,:])
+
+#5.7 Write a Python program to generate a 1-D array containing 100 values, where each value hasto be 10, 20, 50 or 75.
+#the probability for the value to be 10 is set to be 0.4
+#The probability for the value to be 20 is set to be 0.2
+#The probability for the value to be 50 is set to be 0.1
+#The probability for the value to be 75 is set to be 0.3
+from numpy import random
+x = random.choice([10,20,50,75], p=[0.4, 0.2, 0.1, 0.3], size=(100))
+
+print(x)
